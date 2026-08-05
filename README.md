@@ -14,7 +14,6 @@ the CIG-sanctioned community-localization path.
 ## Part of the Aerostar suite
 
 - **AerostarLens** (this) — user-facing localization enhancer.
-- **AerostarCodex** — internal `Data.p4k` extraction/upload console (Lens reuses its extraction approach).
 - **AerostarGroupPrime** — the React web platform (optional, deferred sync target).
 
 ## Stack (planned)
