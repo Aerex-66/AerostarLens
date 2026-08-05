@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --accent: #dbbb5e;
+    --accent-rgb: 219, 187, 94;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-ink-950 font-sans text-slate-200 antialiased;
+    background-image:
+      radial-gradient(1200px 620px at 12% -12%, rgba(74, 144, 217, 0.14), transparent 60%),
+      radial-gradient(1050px 520px at 100% -6%, rgba(219, 187, 94, 0.1), transparent 55%),
+      linear-gradient(180deg, #04070e 0%, #070c18 45%, #04070e 100%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/10 bg-white/[0.035] shadow-glass backdrop-blur-xl;
+  }
+
+  .glass-hover {
+    @apply transition-colors hover:border-white/20 hover:bg-white/[0.06];
+  }
+
+  .gold-text {
+    @apply bg-gold-sheen bg-clip-text text-transparent;
+  }
+}
+
+/* Refined, thin, gold-tinted scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(219, 187, 94, 0.18);
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(219, 187, 94, 0.34);
+  background-clip: content-box;
+}
+
+::selection {
+  background: rgba(219, 187, 94, 0.26);
+  color: #fbf3d6;
+}
+
+/* Brushed-gold shimmer wordmark — ported from the AerostarGroupPrime homepage. */
+.brushed-gold {
+  background: linear-gradient(100deg, #e6c300, #fff7d0, #e6c300, #d4af37, #fff7d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 400% 100%;
+  animation: shine-gold 8s linear infinite;
+  text-shadow: 0 0 8px rgba(230, 195, 0, 0.2);
+}
+@keyframes shine-gold {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Classy SVG underline that draws in on hover (used by the launcher buttons). */
+.underline-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 0.5s ease;
+}
+.group:hover .underline-draw {
+  stroke-dashoffset: 0;
+}

@@ -1,0 +1,12 @@
+# AerostarLens — Python dependencies
+# Versions pinned after first clean install. Mirror AerostarCodex's environment
+# where possible (it already runs scdatatools against Data.p4k).
+
+pywebview>=5.0     # native desktop window hosting the web UI
+scdatatools        # Star Citizen Data.p4k + DataForge extraction (as used by AerostarCodex)
+lxml>=5.0          # fast XML parsing for DataForge records
+
+# ── Dev (optional; install with: pip install -r requirements-dev.txt later) ──
+# pytest
+# black
+# flake8

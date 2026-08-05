@@ -1,0 +1,47 @@
+# ── Python ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ── Node / UI ──────────────────────────────────────────
+ui/node_modules/
+ui/dist/
+ui/.vite/
+
+# ── Build artifacts ────────────────────────────────────
+build/
+dist/
+*.exe
+*.spec.bak
+
+# ── Extracted game data — NEVER COMMIT (large + CIG-owned) ──
+output/
+cache/
+dataforge/
+*.p4k
+*.dcb
+global.ini
+base.ini
+*_enhancements.ini
+
+# ── User / runtime data ────────────────────────────────
+backups/
+*.log
+config.json
+codex-config.json
+
+# ── Secrets ────────────────────────────────────────────
+.env
+.env.local
+
+# ── OS ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# PyInstaller
+build/icon-256.png
+*.spec

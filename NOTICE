@@ -1,0 +1,11 @@
+AerostarLens
+Copyright 2026 Aerostar Group
+
+This product bundles unp4k / unforge (vendor/unp4k), used to extract data from
+the user's own Star Citizen installation. unp4k originates from
+https://github.com/dolkensp/unp4k and is redistributed under its license terms.
+
+AerostarLens is an unofficial fan project and is not affiliated with the Cloud
+Imperium group of companies. Star Citizen(R) is a registered trademark of Cloud
+Imperium Rights LLC. No game data is included in or distributed with this
+repository; all extraction happens locally from the user's own game install.
