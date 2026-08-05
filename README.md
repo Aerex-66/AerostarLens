@@ -23,6 +23,5 @@ PyInstaller packaging. See [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Compliance
 
-Localization text only. Extracted game data (`global.ini`, DataForge, `Data.p4k`) is CIG-owned,
-**git-ignored, and never committed** — it lives only on the user's machine, from their own install.
+Localization text only. Extracted game data (`global.ini`, DataForge, and any other Star Citizen file) is CIG-owned,
 Unofficial fan project, not affiliated with CIG.
